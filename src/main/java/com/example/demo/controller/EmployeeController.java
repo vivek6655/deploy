@@ -10,10 +10,9 @@ public class EmployeeController {
 	
 	
 	   @GetMapping("/employees")
-		 public List<String> getAllEmployees() {
+		 public String getAllEmployees() {
 		   
-		   List<String> list= List.of("John Doe", "Jane Smith", "Alice Johnson");
-		     return list;
+		   return "vivek kumar sagar from noida and aligarh";
 		 }
 	
   
