@@ -2,17 +2,16 @@ package com.example.demo.controller;
 
 import java.util.List;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController
+@Controller
 public class EmployeeController {
+
 	
-	
-	   @GetMapping("/employees")
+	   @RequestMapping("/hello")
 		 public String getAllEmployees() {
-		   
-		   return "vivek kumar sagar from noida and aligarh";
+		   return "hello.jsp";
 		 }
 	
   
